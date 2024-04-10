@@ -1,0 +1,191 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ff0000;
+}
+
+body {
+    padding-top: 70px;
+}
+:root {
+	--rojo: #000000;
+	--fondo: #ff0000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 5px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 40px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
+.estilo-secciones {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.fondo-streamer{
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/streamer1.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.fondo-juegos{
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/GTA5.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.fondo-tendencias{
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/gamesphere\ fondo\ 1.png);
+	background-position: center center;
+	background-size: cover;
+}
+.fondo-seguidos{
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/streamer1.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.fondo-inicio{
+	background: url(../img/fondo_landpage.png);
+	background-position: center center;
+	background-size: cover;
+}
+
+.estilo-secciones .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.estilo-secciones .contenedor-inicio {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.estilo-secciones .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.estilo-secciones .descripcion {
+	color: #fbff00;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+.estilo-secciones .descripcion_juego {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.estilo-secciones .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 3em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.estilo-secciones .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.estilo-secciones .boton i {
+	margin-right: 1.25em;
+}
+
+.estilo-secciones .boton2 {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 3em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.estilo-secciones .boton2:hover {
+	background: #fff;
+	color: #000;
+}
+
+.estilo-secciones .boton2 i {
+	margin-right: 1.25em;
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 5px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.estilo-secciones {
+		font-size: 14px;
+	}
+
+	.estilo-secciones .descripcion {
+		max-width: 100%;
+	}
+}
